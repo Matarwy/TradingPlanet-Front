@@ -59,11 +59,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && (
+        {/* {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )}
+        )} */}
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         {/* <SalesSection {...swapSectionData} /> */}
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradients.cardHeader}
         index={2}
@@ -102,9 +102,9 @@ const Home: React.FC = () => {
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-        {/* <SalesSection {...earnSectionData} /> */}
+        <SalesSection {...earnSectionData} />
         <FarmsPoolsRow />
-      </PageSection>
+      </PageSection> */}
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={

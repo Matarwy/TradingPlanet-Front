@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { Skeleton, Table, Td, Th, Image, Flex, Text, ArrowUpIcon, ArrowDownIcon } from '@pancakeswap/uikit'
+import { Skeleton, Table, Td, Th, Image, Flex, Text, ArrowUpIcon, ArrowDownIcon } from '@trading-planet/uikit'
 import { useHistory } from 'react-router'
 import styled from 'styled-components'
 import times from 'lodash/times'

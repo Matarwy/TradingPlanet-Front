@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { uniqBy } from 'lodash'
-import { Flex, Text, Card, ArrowBackIcon, ArrowForwardIcon, Table, Th, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { Flex, Text, Card, ArrowBackIcon, ArrowForwardIcon, Table, Th, useMatchBreakpoints } from '@trading-planet/uikit'
 import { getNftsFromDifferentCollectionsApi } from 'state/nftMarket/helpers'
 import { NftToken, TokenIdWithCollectionAddress, UserNftInitializationState } from 'state/nftMarket/types'
 import { useTranslation } from 'contexts/Localization'

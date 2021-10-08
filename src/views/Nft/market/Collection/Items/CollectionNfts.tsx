@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Grid } from '@pancakeswap/uikit'
+import { Grid } from '@trading-planet/uikit'
 import { getAddress } from '@ethersproject/address'
 import orderBy from 'lodash/orderBy'
 import { useAppDispatch } from 'state'

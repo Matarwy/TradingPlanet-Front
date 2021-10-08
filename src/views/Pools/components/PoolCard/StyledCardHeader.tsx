@@ -1,6 +1,6 @@
 import React from 'react'
-import { CardHeader, Heading, Text, Flex } from '@pancakeswap/uikit'
-import { Token } from '@pancakeswap/sdk'
+import { CardHeader, Heading, Text, Flex } from '@trading-planet/uikit'
+import { Token } from '@trading-planet/sdk'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import { TokenPairImage } from 'components/TokenImage'

@@ -9,7 +9,7 @@ import {
   InputGroup,
   SearchIcon,
   useMatchBreakpoints,
-} from '@pancakeswap/uikit'
+} from '@trading-planet/uikit'
 import { useTranslation } from 'contexts/Localization'
 import FilterFooter from '../FilterFooter'
 import FilterHeader from '../FilterHeader'

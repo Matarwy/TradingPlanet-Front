@@ -2622,45 +2622,6 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@pancakeswap/eslint-config-pancake@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/eslint-config-pancake/-/eslint-config-pancake-1.1.0.tgz#ddb916af3726359095207306cfc87098cec43f41"
-  integrity sha512-TGyHaDZjXPtubV39S4vPVVRZk9FgsSyBwP6qTP1/H0+nUoKEh+RIUs/nCVxZgN7f8MbbVioLg00gVqV0XI8a7Q==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^4.7.0"
-    "@typescript-eslint/parser" "^4.7.0"
-    eslint-config-airbnb "^18.2.1"
-    eslint-config-prettier "^6.15.0"
-    eslint-plugin-import "^2.22.1"
-    eslint-plugin-jsx-a11y "^6.4.1"
-    eslint-plugin-react "^7.21.5"
-    eslint-plugin-react-hooks "^4.0.0"
-
-"@pancakeswap/sdk@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/sdk/-/sdk-2.4.0.tgz#5da040384419cb45ea2b6eee8104d05914e8bd28"
-  integrity sha512-c5cLOMVa/dlbVbURPpSY6oNSYm61xN5NgfoYCXY88NisHbgLWd/MNHoM98XjgeJFs7OlKcf4G7nui4XGM9lDSA==
-  dependencies:
-    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@pancakeswap/uikit@^0.54.5":
-  version "0.54.5"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/uikit/-/uikit-0.54.5.tgz#3ba0b12ccf2e32adac747e1482762aa2430d302a"
-  integrity sha512-lAXctYpk1nAf7IIg1Pw4IeSXLhJH7HQQoyp8pQ+yUSnILqFuVRNtLyYHP+s2v9DRh3cg4w2s1tzU34JS8mIkbg==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    styled-system "^5.1.5"
-
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -3335,6 +3296,45 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
+
+"@trading-planet/eslint-config-planet@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@trading-planet/eslint-config-planet/-/eslint-config-planet-1.2.0.tgz#0172a8f04dba3e766b7da003ba36f02b3fd49ed9"
+  integrity sha512-8rKmXarDRi0eUBASw1FTawyhNK9GOtTzdaSztgwnv3Ard9cq88E/+YrNK1xAspplwj+VNKQNGaavvzxENKW29w==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.7.0"
+    "@typescript-eslint/parser" "^4.7.0"
+    eslint-config-airbnb "^18.2.1"
+    eslint-config-prettier "^6.15.0"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-jsx-a11y "^6.4.1"
+    eslint-plugin-react "^7.21.5"
+    eslint-plugin-react-hooks "^4.0.0"
+
+"@trading-planet/sdk@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@trading-planet/sdk/-/sdk-2.4.1.tgz#408e0f37a9f846c3f78f75a92bab571873a0e0f7"
+  integrity sha512-lDa0i5wPqS/Kayq40owoRXDEOI8a5MIvLwvLI1p4exlOctv0gnCesXGHgPW476QD4p9m09igv4jSdR2sT3T2kA==
+  dependencies:
+    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
+"@trading-planet/uikit@^0.55.0":
+  version "0.55.0"
+  resolved "https://registry.yarnpkg.com/@trading-planet/uikit/-/uikit-0.55.0.tgz#557819d77ba38771dffa3d41ee5bf6b0ec844d62"
+  integrity sha512-AHA4UehK1/Ae0jclK4RdtvD2V/YKxPq9p/cdGtQRmlh03am24rimLpaGVOS0v0C86QQA7L5jettlIz9oj9vqWA==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/lodash" "^4.14.168"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    styled-system "^5.1.5"
 
 "@truffle/abi-utils@^0.2.2":
   version "0.2.2"

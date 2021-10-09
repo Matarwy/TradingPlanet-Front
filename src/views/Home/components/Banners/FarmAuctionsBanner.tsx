@@ -4,6 +4,7 @@ import { Text, Flex, Button, ArrowForwardIcon, Heading } from '@trading-planet/u
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 
+
 const StyledSubheading = styled(Heading)`
   background: #000;
   font-size: 20px;
@@ -82,7 +83,7 @@ const RightWrapper = styled.div`
 `
 
 const FarmAuctionsBanner = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <Wrapper>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 
 const StyledSubheading = styled(Heading)`
-  background: -webkit-linear-gradient(#ffd800, #eb8c00);
+  background: #000;
   font-size: 20px;
   background-clip: text;
   -webkit-background-clip: text;

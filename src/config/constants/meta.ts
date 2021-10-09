@@ -103,18 +103,18 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/info':
       return {
-        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Overview')} | ${t('TradingPlanet Info & Analytics')}`,
+        description: 'View statistics for TradingPlanet exchanges.',
       }
     case '/info/pools':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Pools')} | ${t('TradingPlanet Info & Analytics')}`,
+        description: 'View statistics for TradingPlanet exchanges.',
       }
     case '/info/tokens':
       return {
-        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Tokens')} | ${t('TradingPlanet Info & Analytics')}`,
+        description: 'View statistics for TradingPlanet exchanges.',
       }
     case '/nfts':
       return {

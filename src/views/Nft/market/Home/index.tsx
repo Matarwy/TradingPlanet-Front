@@ -64,10 +64,10 @@ const Home = () => {
               {t('NFT Market')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell verified PancakeSwap collectibles.')}
+              {t('Buy and Sell verified TradingPlanet collectibles.')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('PancakeSwap NFTs only... for now!')}
+              {t('TradingPlanet NFTs only... for now!')}
             </Heading>
             {account && (
               <Button as={Link} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} mt="32px">

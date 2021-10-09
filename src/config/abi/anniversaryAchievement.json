@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_pancakeProfile",
+        "name": "_TradingPlanetProfile",
         "type": "address"
       },
       {
@@ -237,10 +237,10 @@
   },
   {
     "inputs": [],
-    "name": "pancakeProfile",
+    "name": "TradingPlanetProfile",
     "outputs": [
       {
-        "internalType": "contract PancakeProfile",
+        "internalType": "contract TradingPlanetProfile",
         "name": "",
         "type": "address"
       }

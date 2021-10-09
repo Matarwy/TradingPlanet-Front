@@ -12,8 +12,8 @@
         "type": "address"
       },
       {
-        "internalType": "contract IPancakeProfile",
-        "name": "_pancakeProfile",
+        "internalType": "contract ITradingPlanetProfile",
+        "name": "_TradingPlanetProfile",
         "type": "address"
       },
       {
@@ -370,10 +370,10 @@
   },
   {
     "inputs": [],
-    "name": "pancakeProfile",
+    "name": "TradingPlanetProfile",
     "outputs": [
       {
-        "internalType": "contract IPancakeProfile",
+        "internalType": "contract ITradingPlanetProfile",
         "name": "",
         "type": "address"
       }

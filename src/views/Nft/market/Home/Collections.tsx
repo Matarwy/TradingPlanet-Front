@@ -54,7 +54,7 @@ const Collections = () => {
           disabled
           bgSrc="/images/collections/pancake-squad-banner-sm.png"
           avatarSrc="/images/collections/pancake-squad-avatar.png"
-          collectionName="Pancake Squad"
+          collectionName="TradingPlanet Squad"
         >
           <Text color="textDisabled" fontSize="12px">
             {t('Coming Soon')}

@@ -155,7 +155,7 @@ export const updateNftTokensData = createAsyncThunk<
       const apiMetadata = nfts.data[marketData.otherId] ?? {
         name: '',
         description: '',
-        collection: { name: 'Pancake Bunnies' },
+        collection: { name: 'TradingPlanet Planets' },
         image: {
           original: '',
           thumbnail: '',

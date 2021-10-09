@@ -10,7 +10,7 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.tradingplanet.finance/',
+    to: 'https://tradingplanet.org/',
     text: 'Learn',
     external: true,
   },
@@ -34,7 +34,7 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.tradingplanet.finance/products/yield-farming',
+    to: 'https://tradingplanet.org',
     text: 'Learn',
     external: true,
   },
@@ -43,34 +43,34 @@ export const earnSectionData: SalesSectionProps = {
     attributes: [
       { src: 'pie', alt: 'Pie chart' },
       { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'folder', alt: 'Folder with cake token' },
+      { src: 'folder', alt: 'Folder with PLANET token' },
     ],
   },
 }
 
-export const cakeSectionData: SalesSectionProps = {
-  headingText: 'CAKE makes our world go round.',
+export const PLANETSectionData: SalesSectionProps = {
+  headingText: 'PLANET makes our world go round.',
   bodyText:
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'PLANET token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    to: '/swap?outputCurrency=0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314',
     text: 'Buy PLANET',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.tradingplanet.finance/tokenomics/cake',
+    to: 'https://docs.tradingplanet.finance/tokenomics/PLANET',
     text: 'Learn',
     external: true,
   },
 
   images: {
-    path: '/images/home/cake/',
+    path: '/images/home/PLANET/',
     attributes: [
-      { src: 'bottom-right', alt: 'Small 3d pancake' },
-      { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'CAKE token' },
-      { src: 'top-left', alt: 'Small 3d pancake' },
+      { src: 'bottom-right', alt: 'Small 3d TradingPlanet' },
+      { src: 'top-right', alt: 'Small 3d TradingPlanet' },
+      { src: 'coin', alt: 'PLANET token' },
+      { src: 'top-left', alt: 'Small 3d TradingPlanet' },
     ],
   },
 }

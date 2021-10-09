@@ -100,12 +100,12 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
       {
         label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://tradingplanet.org',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
-        label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        label: t('Home'),
+        href: 'https://tradingplanet.io',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],

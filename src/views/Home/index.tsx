@@ -17,7 +17,7 @@ import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } fro
 import UserBanner from './components/UserBanner'
 
 const StyledHeroSection = styled(PageSection)`
-  padding-top: 16px;
+  height: 100vh;
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 48px;

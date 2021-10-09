@@ -59,7 +59,7 @@ export const PLANETSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.tradingplanet.finance/tokenomics/PLANET',
+    to: 'https://tradingplanet.org',
     text: 'Learn',
     external: true,
   },

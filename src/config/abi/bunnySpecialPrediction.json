@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_TradingPlanetPrediction",
+        "name": "_pancakePrediction",
         "type": "address"
       },
       {
@@ -13,7 +13,7 @@
       },
       {
         "internalType": "address",
-        "name": "_TradingPlanetProfile",
+        "name": "_pancakeProfile",
         "type": "address"
       },
       {
@@ -318,7 +318,7 @@
   },
   {
     "inputs": [],
-    "name": "TradingPlanetPrediction",
+    "name": "pancakePrediction",
     "outputs": [
       {
         "internalType": "contract BnbPricePrediction",
@@ -331,10 +331,10 @@
   },
   {
     "inputs": [],
-    "name": "TradingPlanetProfile",
+    "name": "pancakeProfile",
     "outputs": [
       {
-        "internalType": "contract TradingPlanetProfile",
+        "internalType": "contract pancakeProfile",
         "name": "",
         "type": "address"
       }

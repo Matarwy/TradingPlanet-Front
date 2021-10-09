@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_TradingPlanetLotteryAddress",
+        "name": "_pancakeLotteryAddress",
         "type": "address"
       },
       {
@@ -13,7 +13,7 @@
       },
       {
         "internalType": "address",
-        "name": "_TradingPlanetProfileAddress",
+        "name": "_pancakeProfileAddress",
         "type": "address"
       },
       {
@@ -522,10 +522,10 @@
   },
   {
     "inputs": [],
-    "name": "TradingPlanetProfile",
+    "name": "pancakeProfile",
     "outputs": [
       {
-        "internalType": "contract TradingPlanetProfile",
+        "internalType": "contract pancakeProfile",
         "name": "",
         "type": "address"
       }
@@ -535,10 +535,10 @@
   },
   {
     "inputs": [],
-    "name": "TradingPlanetLottery",
+    "name": "pancakeLottery",
     "outputs": [
       {
-        "internalType": "contract ITradingPlanetLottery",
+        "internalType": "contract IpancakeLottery",
         "name": "",
         "type": "address"
       }

@@ -13,7 +13,7 @@
       },
       {
         "internalType": "address",
-        "name": "_TradingPlanetProfileAddress",
+        "name": "_pancakeProfileAddress",
         "type": "address"
       },
       {
@@ -283,10 +283,10 @@
   },
   {
     "inputs": [],
-    "name": "TradingPlanetProfile",
+    "name": "pancakeProfile",
     "outputs": [
       {
-        "internalType": "contract TradingPlanetProfile",
+        "internalType": "contract pancakeProfile",
         "name": "",
         "type": "address"
       }

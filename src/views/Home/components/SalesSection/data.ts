@@ -48,7 +48,7 @@ export const earnSectionData: SalesSectionProps = {
   },
 }
 
-export const PLANETSectionData: SalesSectionProps = {
+export const cakeSectionData: SalesSectionProps = {
   headingText: 'PLANET makes our world go round.',
   bodyText:
     'PLANET token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',

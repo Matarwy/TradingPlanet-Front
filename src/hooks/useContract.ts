@@ -224,7 +224,7 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
     switch (chainId) {
       case ChainId.MAINNET:
       case ChainId.TESTNET:
-        address = '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+        address = '0x9634Ee8814BD786855FdEa7B438C8591c539769F'
         break
     }
   }

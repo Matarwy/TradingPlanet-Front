@@ -7,8 +7,9 @@ import Container from 'components/Layout/Container'
 import { useWeb3React } from '@web3-react/core'
 import SunburstSvg from './SunburstSvg'
 import CompositeImage from './CompositeImage'
+import {Space} from './FooterBanner';
 
-const BgWrapper = styled.div`
+const BgWrapper = styled.canvas`
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -83,15 +84,15 @@ const bottomRightImage = {
 
 const Footer = () => {
   const { t } = useTranslation()
-  const { account } = useWeb3React()
+  const { account } = useWeb3React();
+
+  React.useEffect(() => {
+    Space.init();
+  },[])
 
   return (
     <>
-      <BgWrapper>
-        <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
-          <StyledSunburst />
-        </Flex>
-      </BgWrapper>
+      <BgWrapper id="footer-banner" />
       <FloatingPancakesWrapper>
         <TopLeftImgWrapper>
           <CompositeImage {...topLeftImage} maxHeight="256px" />

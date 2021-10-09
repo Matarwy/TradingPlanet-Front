@@ -17,7 +17,7 @@ import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } fro
 import UserBanner from './components/UserBanner'
 
 const StyledHeroSection = styled(PageSection)`
-  padding-top: 16px;
+  height: 100vh;
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 48px;
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
         background={
           theme.isDark
             ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-            : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
+            : '#f2ae3312'
         }
         index={2}
         hasCurvedDivider={false}
@@ -128,7 +128,7 @@ const Home: React.FC = () => {
       {/* </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
+        background="#000"
         index={2}
         hasCurvedDivider={false}
       >

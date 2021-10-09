@@ -8,6 +8,7 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import useTheme from 'hooks/useTheme'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 import CompositeImage, { getSrcSet, CompositeImageProps } from './CompositeImage'
+import {init, animate, onWindowResize} from './Banners/Hero';
 
 const flyingAnim = () => keyframes`
   from {
@@ -30,17 +31,27 @@ const fading = () => keyframes`
   }
   to {
     opacity: 0.9;
-  }  
+  }
 `
 
 const BgWrapper = styled.div`
   z-index: -1;
-  overflow: hidden;
   position: absolute;
-  width: 100%;
-  height: 100%;
   bottom: 0px;
   left: 0px;
+
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter:  brightness(50%);
+
+  & canvas {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 const InnerWrapper = styled.div`
@@ -90,27 +101,40 @@ const starsImage: CompositeImageProps = {
 const Hero = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
-  const { theme } = useTheme()
+  const { theme } = useTheme();
+
+  React.useEffect(() => {
+    init();
+    animate();
+
+    window.addEventListener('resize', onWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', onWindowResize);
+    }
+  } , [])
 
   return (
     <>
       <BgWrapper>
+        <canvas id="hero-banner" />
         <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
       </BgWrapper>
-      <Flex
-        position="relative"
+      {/* <Flex
+        position="absolute"
         flexDirection={['column-reverse', null, null, 'row']}
         alignItems={['flex-end', null, null, 'center']}
         justifyContent="center"
         mt={[account ? '280px' : '50px', null, 0]}
         id="homepage-hero"
-      >
-        <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+        height={['100vh', null, null, '100vh']}
+      > */}
+        <Flex position="absolute" flex="1" width={['100%', null, null, '40%']} flexDirection="column" style={{display: 'inline-flex', top: '50%', transform: 'translateY(-50%)'}}>
+          <Heading scale="xxl" color="secondary" mb="24px" style={{userSelect: 'none'}}>
+            {t('Trading Planet  limit is the sky.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Trade ,earn and stack crypto on  Trading Planet decentralized platform.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
@@ -119,21 +143,21 @@ const Hero = () => {
             </Link>
           </Flex>
         </Flex>
-        <Flex
+        {/* <Flex
           height={['192px', null, null, '100%']}
           width={['192px', null, null, '100%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
           position="relative"
         >
-          <BunnyWrapper>
-            <img src={`${imagePath}${imageSrc}.png`} srcSet={getSrcSet(imagePath, imageSrc)} alt={t('Lunar bunny')} />
-          </BunnyWrapper>
-          <StarsWrapper>
-            <CompositeImage {...starsImage} />
-          </StarsWrapper>
-        </Flex>
-      </Flex>
+      <BunnyWrapper>
+        <img src={`${imagePath}${imageSrc}.png`} srcSet={getSrcSet(imagePath, imageSrc)} alt={t('Lunar bunny')} />
+      </BunnyWrapper>
+      <StarsWrapper>
+        <CompositeImage {...starsImage} />
+      </StarsWrapper>
+      </Flex> */}
+      {/* </Flex> */}
     </>
   )
 }

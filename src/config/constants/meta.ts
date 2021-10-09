@@ -4,8 +4,8 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'TradingPlanet',
   description:
-    'The most popular AMM on BSC by user count! Earn Planet through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by TradingPlanet), NFTs, and more, on a platform you can trust.',
-  image: process.env.PUBLIC_URL+'/images/hero.png',
+    'Trading Planet is  a decentralized finance protocol that is used to exchange cryptocurrencies. The protocol facilitates automated transactions between cryptocurrency tokens on the Binance blockchain through the use of smart contracts.',
+  image: 'https://pancakeswap.finance/images/hero.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
@@ -103,18 +103,18 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/info':
       return {
-        title: `${t('Overview')} | ${t('TradingPlanet Info & Analytics')}`,
-        description: 'View statistics for TradingPlanet exchanges.',
+        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
+        description: 'View statistics for Pancakeswap exchanges.',
       }
     case '/info/pools':
       return {
-        title: `${t('Pools')} | ${t('TradingPlanet Info & Analytics')}`,
-        description: 'View statistics for TradingPlanet exchanges.',
+        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
+        description: 'View statistics for Pancakeswap exchanges.',
       }
     case '/info/tokens':
       return {
-        title: `${t('Tokens')} | ${t('TradingPlanet Info & Analytics')}`,
-        description: 'View statistics for TradingPlanet exchanges.',
+        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
+        description: 'View statistics for Pancakeswap exchanges.',
       }
     case '/nfts':
       return {

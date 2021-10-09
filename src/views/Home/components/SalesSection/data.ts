@@ -2,7 +2,7 @@ import { SalesSectionProps } from '.'
 
 export const swapSectionData: SalesSectionProps = {
   headingText: 'Trade anything. No registration, no hassle.',
-  bodyText: 'Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.',
+  bodyText: 'Instantly swap crypto tokens, no registration.',
   reverse: false,
   primaryButton: {
     to: '/swap',
@@ -10,7 +10,7 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
+    to: 'https://docs.tradingplanet.finance/',
     text: 'Learn',
     external: true,
   },
@@ -26,7 +26,7 @@ export const swapSectionData: SalesSectionProps = {
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'PancakeSwap makes it easy to make your crypto work for you.',
+  bodyText: 'Provide liquidity and earn from transaction fees. Join our staking or yield farming pools.',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -34,7 +34,7 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
+    to: 'https://docs.tradingplanet.finance/products/yield-farming',
     text: 'Learn',
     external: true,
   },
@@ -55,11 +55,11 @@ export const cakeSectionData: SalesSectionProps = {
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy CAKE',
+    text: 'Buy PLANET',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/cake',
+    to: 'https://docs.tradingplanet.finance/tokenomics/cake',
     text: 'Learn',
     external: true,
   },

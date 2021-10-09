@@ -31,14 +31,6 @@ export const mainnetTokens = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
-  planet: new Token(
-    MAINNET,
-    '0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314',
-    18,
-    'PLANET',
-    'Trading Planet Token',
-    'https://tradingplanet.finance/',
-  ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   nft: new Token(MAINNET, '0x1fC9004eC7E5722891f5f38baE7678efCB11d34D', 6, 'NFT', 'APENFT', 'https://apenft.org'),
   stephero: new Token(
@@ -1662,14 +1654,6 @@ export const testnetTokens = {
     'CAKE',
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
-  ),
-  planet: new Token(
-    TESTNET,
-    '0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314',
-    18,
-    'PLANET',
-    'Trading Planet Token',
-    'https://tradingplanet.finance/',
   ),
   busd: new Token(
     TESTNET,

@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token } from '@trading-planet/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0xcA35d5f79793a7e793695de2293b415a7bA20D5e'
+export const ROUTER_ADDRESS = '0x091cd9d1c190c9b3e76e37822ddf8c33a2f71d22'
 
 // a list of tokens by chain
 type ChainTokenList = {

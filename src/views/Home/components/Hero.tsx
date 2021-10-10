@@ -129,7 +129,7 @@ const Hero = () => {
         id="homepage-hero"
         height={['100vh', null, null, '100vh']}
       > */}
-        <Flex position="absolute" flex="1" width={['100%', null, null, '40%']} flexDirection="column" style={{display: 'inline-flex', top: '50%', transform: 'translateY(-50%)'}}>
+        <Flex position="absolute" flex="1" maxWidth={['100%', null, null, '40%']} flexDirection="column" style={{display: 'inline-flex', top: '50%', transform: 'translateY(-50%)'}}>
           <Heading scale="xxl" color="secondary" mb="24px" style={{userSelect: 'none'}}>
             {t('Trading Planet  limit is the sky.')}
           </Heading>

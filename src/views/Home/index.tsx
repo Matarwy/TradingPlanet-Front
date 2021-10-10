@@ -59,11 +59,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {/* {account && (
+        {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )} */}
+        )}
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...swapSectionData} />
       </PageSection>
-      {/* <PageSection
+      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradients.cardHeader}
         index={2}
@@ -104,8 +104,8 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData} />
         <FarmsPoolsRow />
-      </PageSection> */}
-      {/* <PageSection
+      </PageSection>
+      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
           theme.isDark
@@ -116,16 +116,16 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <WinSection />
-      </PageSection> */}
-      {/* <PageSection
+      </PageSection>
+      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
-      > */}
-        {/* <SalesSection {...cakeSectionData} /> */}
-        {/* <CakeDataRow /> */}
-      {/* </PageSection> */}
+      >
+        <SalesSection {...cakeSectionData} />
+        <CakeDataRow />
+      </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="#000"

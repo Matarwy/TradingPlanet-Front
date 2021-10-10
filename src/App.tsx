@@ -81,12 +81,12 @@ const App: React.FC = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            {/* <Route exact path="/farms/auction">
+            <Route exact path="/farms/auction">
               <FarmAuction />
-            </Route> */}
-            {/* <Route path="/farms">
+            </Route>
+            <Route path="/farms">
               <Farms />
-            </Route> */}
+            </Route>
             <Route path="/pools">
               <Pools />
             </Route>
@@ -130,9 +130,9 @@ const App: React.FC = () => {
             </Route>
 
             {/* Info pages */}
-            {/* <Route path="/info">
+            <Route path="/info">
               <Info />
-            </Route> */}
+            </Route>
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
             <Route exact strict path="/swap" component={Swap} />

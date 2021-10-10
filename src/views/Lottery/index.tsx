@@ -24,6 +24,7 @@ import AllHistoryCard from './components/AllHistoryCard'
 import CheckPrizesSection from './components/CheckPrizesSection'
 import HowToPlay from './components/HowToPlay'
 import useShowMoreUserHistory from './hooks/useShowMoreUserRounds'
+import Page from 'components/Layout/Page'
 
 const LotteryPage = styled.div`
   min-height: calc(100vh - 64px);
@@ -42,6 +43,13 @@ const Lottery = () => {
   const { nextEventTime, postCountdownText, preCountdownText } = useGetNextLotteryEvent(endTimeAsInt, status)
   const { numUserRoundsRequested, handleShowMoreUserRounds } = useShowMoreUserHistory()
 
+  return (
+    <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+  );
   return (
     <LotteryPage>
       <PageSection background={TITLE_BG} index={1} hasCurvedDivider={false}>

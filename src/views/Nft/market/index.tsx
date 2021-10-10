@@ -6,20 +6,37 @@ import PageLoader from 'components/Loader/PageLoader'
 import { NFTMarketInitializationState } from 'state/nftMarket/types'
 import { nftsBaseUrl, pancakeBunniesAddress } from './constants'
 
+import Page from 'components/Layout/Page'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
+
+
 const Home = lazy(() => import('./Home'))
 const NftProfile = lazy(() => import('./Profile'))
 const Collection = lazy(() => import('./Collection'))
 const Collections = lazy(() => import('./Collections'))
 
 const Market = () => {
+  const { t } = useTranslation()
   const { account } = useWeb3React()
   const initializationState = useGetNFTInitializationState()
 
   useFetchCollections()
 
-  if (initializationState !== NFTMarketInitializationState.INITIALIZED) {
-    return <PageLoader />
-  }
+  // if (initializationState !== NFTMarketInitializationState.INITIALIZED) {
+  //   return <PageLoader />
+  // }
+
+
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
 
   return (
     <>

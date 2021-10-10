@@ -6,6 +6,11 @@ import Hero from './components/Hero'
 import Footer from './components/Footer'
 import { Proposals } from './components/Proposals'
 
+import Page from 'components/Layout/Page'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
+
+
 const Chrome = styled.div`
   flex: none;
 `
@@ -16,6 +21,17 @@ const Content = styled.div`
 `
 
 const Voting = () => {
+  const { t } = useTranslation()
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
+  
   return (
     <>
       <PageMeta />

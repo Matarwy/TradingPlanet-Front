@@ -3311,10 +3311,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@trading-planet/sdk@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@trading-planet/sdk/-/sdk-2.4.1.tgz#408e0f37a9f846c3f78f75a92bab571873a0e0f7"
-  integrity sha512-lDa0i5wPqS/Kayq40owoRXDEOI8a5MIvLwvLI1p4exlOctv0gnCesXGHgPW476QD4p9m09igv4jSdR2sT3T2kA==
+"@trading-planet/sdk@^2.4.2":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@trading-planet/sdk/-/sdk-2.4.3.tgz#65647e08f0eee88eba4854b2472c87b302eeece1"
+  integrity sha512-unD2Ktfb3zIpIGnBmocl3Vw9qCvYiGsk7rg3eehNXZKG8IBNf+Esoykf8v2btnJ18MVT0c+f3KFENx/WeL6RXA==
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"
@@ -3324,10 +3324,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@trading-planet/uikit@0.55.3":
-  version "0.55.3"
-  resolved "https://registry.yarnpkg.com/@trading-planet/uikit/-/uikit-0.55.3.tgz#0875a7d7411bb7dc5b9c946bd101ce12edad3712"
-  integrity sha512-JpfoBNk7P7fTyzuW3m5/QHz/lUj1X8uNS3g9cxk1w5MpJBMH1z/1vObRomh+y9BTHNpMwiWfO7fdJQyUasWzfw==
+"@trading-planet/uikit@0.55.5":
+  version "0.55.5"
+  resolved "https://registry.yarnpkg.com/@trading-planet/uikit/-/uikit-0.55.5.tgz#273d1d986c7aa1d68e9915c7af01d61ea74e71c5"
+  integrity sha512-QFCTobd02J7wjEGrkEPVamYKTJnFb9WhlDeZJC57JoEKToiUoI/daExWl9qW6wZgfEyokPouJfn11OQ9UzwQrw==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

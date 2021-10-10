@@ -7,10 +7,24 @@ import Hero from './components/Hero'
 import CurrentIfo from './CurrentIfo'
 import PastIfo from './PastIfo'
 
+import Page from 'components/Layout/Page'
+import { Heading } from '@trading-planet/uikit'
+
+
 const Ifos = () => {
   const { t } = useTranslation()
   const { path, url, isExact } = useRouteMatch()
 
+
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
   return (
     <>
       <Hero />

@@ -87,7 +87,7 @@ const Footer = () => {
   const { account } = useWeb3React();
 
   React.useEffect(() => {
-    Space.init();
+    Space.init("footer-banner");
   },[])
 
   return (

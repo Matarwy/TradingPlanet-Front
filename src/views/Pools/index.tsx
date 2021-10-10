@@ -273,6 +273,11 @@ const Pools: React.FC = () => {
         </Flex>
       </PageHeader>
       <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+      </Page>
+      {/* <Page>
         <PoolControls>
           <PoolTabButtons
             stakedOnly={stakedOnly}
@@ -328,7 +333,7 @@ const Pools: React.FC = () => {
             <Loading />
           </Flex>
         )}
-        {/* {viewMode === ViewMode.CARD ? cardLayout : tableLayout} */}
+        {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
         <div ref={observerRef} />
         <Image
           mx="auto"
@@ -338,7 +343,7 @@ const Pools: React.FC = () => {
           width={192}
           height={184.5}
         />
-      </Page>
+      </Page> */}
     </>
   )
 }

@@ -8,7 +8,25 @@ import PoolPage from './Pools/PoolPage'
 import Tokens from './Tokens'
 import RedirectInvalidToken from './Tokens/redirects'
 
+import Page from 'components/Layout/Page'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
+
+
 const Info: React.FC = () => {
+
+  const { t } = useTranslation()
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
+
+
   return (
     <>
       <ProtocolUpdater />

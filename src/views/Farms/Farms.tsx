@@ -123,7 +123,7 @@ const Farms: React.FC = () => {
   const [viewMode, setViewMode] = useUserFarmsViewMode()
   const { account } = useWeb3React()
   const [sortOption, setSortOption] = useState('hot')
-  const { observerRef, isIntersecting } = useIntersectionObserver()
+  // const { observerRef, isIntersecting } = useIntersectionObserver()
   const chosenFarmsLength = useRef(0)
 
   const isArchived = pathname.includes('archived')
@@ -240,16 +240,16 @@ const Farms: React.FC = () => {
 
   chosenFarmsLength.current = chosenFarmsMemoized.length
 
-  useEffect(() => {
-    if (isIntersecting) {
-      setNumberOfFarmsVisible((farmsCurrentlyVisible) => {
-        if (farmsCurrentlyVisible <= chosenFarmsLength.current) {
-          return farmsCurrentlyVisible + NUMBER_OF_FARMS_VISIBLE
-        }
-        return farmsCurrentlyVisible
-      })
-    }
-  }, [isIntersecting])
+  // useEffect(() => {
+  //   if (isIntersecting) {
+  //     setNumberOfFarmsVisible((farmsCurrentlyVisible) => {
+  //       if (farmsCurrentlyVisible <= chosenFarmsLength.current) {
+  //         return farmsCurrentlyVisible + NUMBER_OF_FARMS_VISIBLE
+  //       }
+  //       return farmsCurrentlyVisible
+  //     })
+  //   }
+  // }, [isIntersecting])
 
   const rowData = chosenFarmsMemoized.map((farm) => {
     const { token, quoteToken } = farm

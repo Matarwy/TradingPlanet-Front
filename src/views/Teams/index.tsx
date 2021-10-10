@@ -12,6 +12,15 @@ const Teams = () => {
   const { teams, isLoading } = useTeams()
   const teamList = Object.values(teams)
   const topTeams = orderBy(teamList, ['points', 'id', 'name'], ['desc', 'asc', 'asc'])
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
 
   return (
     <Page>

@@ -1,6 +1,6 @@
 
 export const Space = {
-    init: function(){
+    init: function(cId){
       var self = this;
       this.config = {
         perspective: 3,
@@ -8,7 +8,7 @@ export const Space = {
         speed: 1,
         stars_count: 2
       };
-      this.canvas = document.getElementById('footer-banner');
+      this.canvas = document.getElementById(cId);
       this.context = this.canvas.getContext('2d');
       this.start();
       window.onresize = function(){

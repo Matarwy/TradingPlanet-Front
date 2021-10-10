@@ -19,6 +19,9 @@ import Desktop from './Desktop'
 import Mobile from './Mobile'
 import RiskDisclaimer from './components/RiskDisclaimer'
 import ChartDisclaimer from './components/ChartDisclaimer'
+import Page from 'components/Layout/Page'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
 
 const Predictions = () => {
   const { isDesktop } = useMatchBreakpoints()
@@ -32,24 +35,25 @@ const Predictions = () => {
   const handleAcceptRiskSuccess = () => setHasAcceptedRisk(true)
   const [onPresentRiskDisclaimer] = useModal(<RiskDisclaimer onSuccess={handleAcceptRiskSuccess} />, false)
   const [onPresentChartDisclaimer] = useModal(<ChartDisclaimer />, false)
+  const { t } = useTranslation()
 
   // TODO: memoize modal's handlers
   const onPresentRiskDisclaimerRef = useRef(onPresentRiskDisclaimer)
   const onPresentChartDisclaimerRef = useRef(onPresentChartDisclaimer)
 
   // Disclaimer
-  useEffect(() => {
-    if (!hasAcceptedRisk) {
-      onPresentRiskDisclaimerRef.current()
-    }
-  }, [hasAcceptedRisk, onPresentRiskDisclaimerRef])
+  // useEffect(() => {
+  //   if (!hasAcceptedRisk) {
+  //     onPresentRiskDisclaimerRef.current()
+  //   }
+  // }, [hasAcceptedRisk, onPresentRiskDisclaimerRef])
 
   // Chart Disclaimer
-  useEffect(() => {
-    if (isChartPaneOpen && showDisclaimer) {
-      onPresentChartDisclaimerRef.current()
-    }
-  }, [onPresentChartDisclaimerRef, isChartPaneOpen, showDisclaimer])
+  // useEffect(() => {
+  //   if (isChartPaneOpen && showDisclaimer) {
+  //     onPresentChartDisclaimerRef.current()
+  //   }
+  // }, [onPresentChartDisclaimerRef, isChartPaneOpen, showDisclaimer])
 
   useEffect(() => {
     if (initialBlock > 0) {
@@ -58,12 +62,23 @@ const Predictions = () => {
     }
   }, [initialBlock, dispatch, account])
 
-  usePollPredictions()
-  usePollOraclePrice()
+  // usePollPredictions()
+  // usePollOraclePrice()
 
-  if (status === PredictionStatus.INITIAL) {
-    return <PageLoader />
-  }
+  // if (status === PredictionStatus.INITIAL) {
+  //   return <PageLoader />
+  // }
+
+
+  return (
+    <>
+      <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+    </Page>
+    </>
+  );
 
   return (
     <>
@@ -81,4 +96,4 @@ const Predictions = () => {
   )
 }
 
-export default Predictions
+export default Predictions;

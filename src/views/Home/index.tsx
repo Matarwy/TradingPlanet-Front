@@ -103,7 +103,7 @@ const Home: React.FC = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData} />
-        <FarmsPoolsRow />
+        {/* <FarmsPoolsRow /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

@@ -39,9 +39,9 @@ const PoolsTable: React.FC<PoolsTableProps> = ({ pools, userDataLoaded, account 
   const { t } = useTranslation()
   const tableWrapperEl = useRef<HTMLDivElement>(null)
   const scrollToTop = (): void => {
-    tableWrapperEl.current.scrollIntoView({
-      behavior: 'smooth',
-    })
+    // tableWrapperEl.current.scrollIntoView({
+    //   behavior: 'smooth',
+    // })
   }
   return (
     <StyledTableBorder>

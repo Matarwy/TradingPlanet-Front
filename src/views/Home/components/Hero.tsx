@@ -133,7 +133,7 @@ const Hero = () => {
           <Heading scale="xxl" color="secondary" mb="24px" style={{userSelect: 'none'}}>
             {t('Trading Planet  limit is the sky.')}
           </Heading>
-          <Heading scale="md" mb="24px">
+          <Heading scale="md" mb="24px" color="white">
             {t('Trade ,earn and stack crypto on  Trading Planet decentralized platform.')}
           </Heading>
           <Flex>

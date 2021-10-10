@@ -129,14 +129,27 @@ export default function AddLiquidity({
   const addTransaction = useTransactionAdder()
 
   async function onAdd() {
+    console.log({
+      chainId,
+      library,
+      account,
+    })
     if (!chainId || !library || !account) return
     const router = getRouterContract(chainId, library, account)
-
+    console.log({
+      router,
+    })
     const { [Field.CURRENCY_A]: parsedAmountA, [Field.CURRENCY_B]: parsedAmountB } = parsedAmounts
+    console.log({
+      parsedAmountA,
+      parsedAmountB,
+      currencyA,
+      currencyB,
+      deadline,
+    })
     if (!parsedAmountA || !parsedAmountB || !currencyA || !currencyB || !deadline) {
       return
     }
-
     const amountsMin = {
       [Field.CURRENCY_A]: calculateSlippageAmount(parsedAmountA, noLiquidity ? 0 : allowedSlippage)[0],
       [Field.CURRENCY_B]: calculateSlippageAmount(parsedAmountB, noLiquidity ? 0 : allowedSlippage)[0],

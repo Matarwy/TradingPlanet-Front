@@ -65,7 +65,7 @@ export const cakeSectionData: SalesSectionProps = {
   },
 
   images: {
-    path: '/images/home/PLANET/',
+    path: '/images/home/cake/',
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d TradingPlanet' },
       { src: 'top-right', alt: 'Small 3d TradingPlanet' },

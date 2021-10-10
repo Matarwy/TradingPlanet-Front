@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState, useMemo, useRef } from 'react'
 import { Route, useRouteMatch, useLocation, NavLink } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from '@trading-planet/uikit'
+import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, Box } from '@trading-planet/uikit'
 import { ChainId } from '@trading-planet/sdk'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
@@ -385,7 +385,13 @@ const Farms: React.FC = () => {
           </Button>
         </NavLink>
       </PageHeader>
+
       <Page>
+        <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+          {t('"Coming Soon...')}
+        </Heading>
+      </Page>
+      {/* <Page>
         <ControlContainer>
           <ViewControls>
             <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
@@ -443,7 +449,7 @@ const Farms: React.FC = () => {
         )}
         <div ref={observerRef} />
         <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
-      </Page>
+      </Page> */}
     </>
   )
 }

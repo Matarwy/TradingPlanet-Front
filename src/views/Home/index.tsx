@@ -124,7 +124,7 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <SalesSection {...cakeSectionData} />
-        <CakeDataRow />
+        {/* <CakeDataRow /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

@@ -8,7 +8,7 @@ import PoolPage from './Pools/PoolPage'
 import Tokens from './Tokens'
 import RedirectInvalidToken from './Tokens/redirects'
 
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import { Heading } from '@trading-planet/uikit'
 import { useTranslation } from 'contexts/Localization'
 

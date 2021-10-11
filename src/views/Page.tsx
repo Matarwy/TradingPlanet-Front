@@ -12,7 +12,7 @@ const StyledPage = styled.div`
   padding: 16px;
   padding-bottom: 0;
   min-height: calc(100vh - 64px);
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  background-image: linear-gradient(to right bottom, #4c9bdb, #327ed0, #2f5fc1, #3e3dab, #4e088e);;
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;

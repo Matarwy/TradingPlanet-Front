@@ -35,6 +35,11 @@ export default function CurrencyLogo({
     return []
   }, [currency, uriLocations])
 
+
+  React.useEffect(() => {
+    console.log(currency)
+  }, [srcs])
+
   if (currency === ETHER) {
     return <BinanceIcon width={size} style={style} />
   }

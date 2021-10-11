@@ -6,7 +6,7 @@ import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, 
 import { ChainId } from '@trading-planet/sdk'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import { useFarms, usePollFarmsWithUserData, usePriceCakeBusd } from 'state/farms/hooks'
 import useIntersectionObserver from 'hooks/useIntersectionObserver'
 import { DeserializedFarm } from 'state/types'
@@ -366,6 +366,15 @@ const Farms: React.FC = () => {
   const handleSortOptionChange = (option: OptionProps): void => {
     setSortOption(option.value)
   }
+
+
+  return (
+      <Page>
+      <Heading as="h2" scale="xxl" color="secondary" mb="24px">
+        {t('"Coming Soon...')}
+      </Heading>
+    </Page>
+  );
 
   return (
     <>

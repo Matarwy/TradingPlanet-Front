@@ -6,7 +6,7 @@ import Hero from './components/Hero'
 import Footer from './components/Footer'
 import { Proposals } from './components/Proposals'
 
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import { Heading } from '@trading-planet/uikit'
 import { useTranslation } from 'contexts/Localization'
 

@@ -19,7 +19,7 @@ import Desktop from './Desktop'
 import Mobile from './Mobile'
 import RiskDisclaimer from './components/RiskDisclaimer'
 import ChartDisclaimer from './components/ChartDisclaimer'
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import { Heading } from '@trading-planet/uikit'
 import { useTranslation } from 'contexts/Localization'
 

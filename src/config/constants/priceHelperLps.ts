@@ -11,12 +11,12 @@ const priceHelperLps: SerializedFarmConfig[] = [
    */
   {
     pid: null,
-    lpSymbol: 'QSD-BNB LP',
+    lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x7b3ae32eE8C532016f3E31C8941D937c59e055B9',
+      56: '0xD57a08761A6cb86a46088fF75FDFb05a502d0c1C',
     },
-    token: tokens.qsd,
+    token: tokens.busd,
     quoteToken: tokens.wbnb,
   },
 ]

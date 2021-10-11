@@ -1,5 +1,5 @@
-const PANCAKE_EXTENDED = 'https://tokens.tradingplanet.finance/pancakeswap-extended.json'
-const PANCAKE_TOP100 = 'https://tokens.tradingplanet.finance/pancakeswap-top-100.json'
+const PANCAKE_EXTENDED = 'https://tokens.tradingplanet.finance/tradingplanet-extended.json'
+const PANCAKE_TOP100 = 'https://tokens.tradingplanet.finance/tradingplanet-top-100.json'
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 

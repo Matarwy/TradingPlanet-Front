@@ -6,7 +6,7 @@ import PageLoader from 'components/Loader/PageLoader'
 import { NFTMarketInitializationState } from 'state/nftMarket/types'
 import { nftsBaseUrl, pancakeBunniesAddress } from './constants'
 
-import Page from 'components/Layout/Page'
+import Page from '../../Page'
 import { Heading } from '@trading-planet/uikit'
 import { useTranslation } from 'contexts/Localization'
 

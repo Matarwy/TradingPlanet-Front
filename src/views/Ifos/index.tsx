@@ -7,7 +7,7 @@ import Hero from './components/Hero'
 import CurrentIfo from './CurrentIfo'
 import PastIfo from './PastIfo'
 
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import { Heading } from '@trading-planet/uikit'
 
 

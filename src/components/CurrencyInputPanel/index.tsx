@@ -77,7 +77,29 @@ export default function CurrencyInputPanel({
   const { account } = useActiveWeb3React()
   const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, currency ?? undefined)
   const { t } = useTranslation()
-  const translatedLabel = label || t('Input')
+  const translatedLabel = label || t('Input');
+
+
+  React.useEffect(() => {
+    console.log(
+      {
+        value,
+        onUserInput,
+        onMax,
+        showMaxButton,
+        label,
+        onCurrencySelect,
+        currency,
+        disableCurrencySelect,
+        hideBalance,
+        pair, // used for double token logo
+        hideInput,
+        otherCurrency,
+        id,
+        showCommonBases,
+      }
+    );
+  }, [])
 
   const [onPresentCurrencyModal] = useModal(
     <CurrencySearchModal

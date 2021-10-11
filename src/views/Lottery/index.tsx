@@ -24,7 +24,7 @@ import AllHistoryCard from './components/AllHistoryCard'
 import CheckPrizesSection from './components/CheckPrizesSection'
 import HowToPlay from './components/HowToPlay'
 import useShowMoreUserHistory from './hooks/useShowMoreUserRounds'
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 
 const LotteryPage = styled.div`
   min-height: calc(100vh - 64px);

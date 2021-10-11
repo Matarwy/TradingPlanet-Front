@@ -20,7 +20,7 @@ import {
 import { usePollFarmsPublicData } from 'state/farms/hooks'
 import { latinise } from 'utils/latinise'
 import FlexLayout from 'components/Layout/Flex'
-import Page from 'components/Layout/Page'
+import Page from '../Page'
 import PageHeader from 'components/PageHeader'
 import SearchInput from 'components/SearchInput'
 import Select, { OptionProps } from 'components/Select/Select'
@@ -92,7 +92,7 @@ const Pools: React.FC = () => {
   const [stakedOnly, setStakedOnly] = useUserPoolStakedOnly()
   const [viewMode, setViewMode] = useUserPoolsViewMode()
   const [numberOfPoolsVisible, setNumberOfPoolsVisible] = useState(NUMBER_OF_POOLS_VISIBLE)
-  const { observerRef, isIntersecting } = useIntersectionObserver()
+  // const { observerRef, isIntersecting } = useIntersectionObserver()
   const [searchQuery, setSearchQuery] = useState('')
   const [sortOption, setSortOption] = useState('hot')
   const chosenPoolsLength = useRef(0)
@@ -140,16 +140,16 @@ const Pools: React.FC = () => {
   useFetchPublicPoolsData()
   useFetchUserPools(account)
 
-  useEffect(() => {
-    if (isIntersecting) {
-      setNumberOfPoolsVisible((poolsCurrentlyVisible) => {
-        if (poolsCurrentlyVisible <= chosenPoolsLength.current) {
-          return poolsCurrentlyVisible + NUMBER_OF_POOLS_VISIBLE
-        }
-        return poolsCurrentlyVisible
-      })
-    }
-  }, [isIntersecting])
+  // useEffect(() => {
+  //   if (isIntersecting) {
+  //     setNumberOfPoolsVisible((poolsCurrentlyVisible) => {
+  //       if (poolsCurrentlyVisible <= chosenPoolsLength.current) {
+  //         return poolsCurrentlyVisible + NUMBER_OF_POOLS_VISIBLE
+  //       }
+  //       return poolsCurrentlyVisible
+  //     })
+  //   }
+  // }, [isIntersecting])
 
   const showFinishedPools = location.pathname.includes('history')
 
@@ -252,100 +252,102 @@ const Pools: React.FC = () => {
   const tableLayout = <PoolsTable pools={chosenPools} account={account} userDataLoaded={userDataLoaded} />
 
   return (
-    <>
-      <PageHeader>
-        <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
-          <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
-            <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
-            </Heading>
-            <Heading scale="md" color="text">
-              {t('Just stake some tokens to earn.')}
-            </Heading>
-            <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
-            </Heading>
-          </Flex>
-          <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
-            <HelpButton />
-            <BountyCard />
-          </Flex>
-        </Flex>
-      </PageHeader>
-      <Page>
+    <Page>
         <Heading as="h2" scale="xxl" color="secondary" mb="24px">
           {t('"Coming Soon...')}
         </Heading>
-      </Page>
-      {/* <Page>
-        <PoolControls>
-          <PoolTabButtons
-            stakedOnly={stakedOnly}
-            setStakedOnly={setStakedOnly}
-            hasStakeInFinishedPools={hasStakeInFinishedPools}
-            viewMode={viewMode}
-            setViewMode={setViewMode}
-          />
-          <FilterContainer>
-            <LabelWrapper>
-              <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
-                {t('Sort by')}
-              </Text>
-              <ControlStretch>
-                <Select
-                  options={[
-                    {
-                      label: t('Hot'),
-                      value: 'hot',
-                    },
-                    {
-                      label: t('APR'),
-                      value: 'apr',
-                    },
-                    {
-                      label: t('Earned'),
-                      value: 'earned',
-                    },
-                    {
-                      label: t('Total staked'),
-                      value: 'totalStaked',
-                    },
-                  ]}
-                  onOptionChange={handleSortOptionChange}
-                />
-              </ControlStretch>
-            </LabelWrapper>
-            <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
-                {t('Search')}
-              </Text>
-              <SearchInput onChange={handleChangeSearchQuery} placeholder="Search Pools" />
-            </LabelWrapper>
-          </FilterContainer>
-        </PoolControls>
-        {showFinishedPools && (
-          <Text fontSize="20px" color="failure" pb="32px">
-            {t('These pools are no longer distributing rewards. Please unstake your tokens.')}
-          </Text>
-        )}
-        {account && !userDataLoaded && stakedOnly && (
-          <Flex justifyContent="center" mb="4px">
-            <Loading />
-          </Flex>
-        )}
-        {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
-        <div ref={observerRef} />
-        <Image
-          mx="auto"
-          mt="12px"
-          src="/images/decorations/3d-syrup-bunnies.png"
-          alt="TradingPlanet illustration"
-          width={192}
-          height={184.5}
-        />
-      </Page> */}
-    </>
-  )
+    </Page>
+  );
+  // return (
+  //   <>
+  //     <PageHeader>
+  //       <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
+  //         <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
+  //           <Heading as="h1" scale="xxl" color="secondary" mb="24px">
+  //             {t('Syrup Pools')}
+  //           </Heading>
+  //           <Heading scale="md" color="text">
+  //             {t('Just stake some tokens to earn.')}
+  //           </Heading>
+  //           <Heading scale="md" color="text">
+  //             {t('High APR, low risk.')}
+  //           </Heading>
+  //         </Flex>
+  //         <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
+  //           <HelpButton />
+  //           <BountyCard />
+  //         </Flex>
+  //       </Flex>
+  //     </PageHeader>
+  //     <Page>
+  //       <PoolControls>
+  //         <PoolTabButtons
+  //           stakedOnly={stakedOnly}
+  //           setStakedOnly={setStakedOnly}
+  //           hasStakeInFinishedPools={hasStakeInFinishedPools}
+  //           viewMode={viewMode}
+  //           setViewMode={setViewMode}
+  //         />
+  //         <FilterContainer>
+  //           <LabelWrapper>
+  //             <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
+  //               {t('Sort by')}
+  //             </Text>
+  //             <ControlStretch>
+  //               <Select
+  //                 options={[
+  //                   {
+  //                     label: t('Hot'),
+  //                     value: 'hot',
+  //                   },
+  //                   {
+  //                     label: t('APR'),
+  //                     value: 'apr',
+  //                   },
+  //                   {
+  //                     label: t('Earned'),
+  //                     value: 'earned',
+  //                   },
+  //                   {
+  //                     label: t('Total staked'),
+  //                     value: 'totalStaked',
+  //                   },
+  //                 ]}
+  //                 onOptionChange={handleSortOptionChange}
+  //               />
+  //             </ControlStretch>
+  //           </LabelWrapper>
+  //           <LabelWrapper style={{ marginLeft: 16 }}>
+  //             <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase">
+  //               {t('Search')}
+  //             </Text>
+  //             <SearchInput onChange={handleChangeSearchQuery} placeholder="Search Pools" />
+  //           </LabelWrapper>
+  //         </FilterContainer>
+  //       </PoolControls>
+  //       {showFinishedPools && (
+  //         <Text fontSize="20px" color="failure" pb="32px">
+  //           {t('These pools are no longer distributing rewards. Please unstake your tokens.')}
+  //         </Text>
+  //       )}
+  //       {account && !userDataLoaded && stakedOnly && (
+  //         <Flex justifyContent="center" mb="4px">
+  //           <Loading />
+  //         </Flex>
+  //       )}
+  //       {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
+  //       <div ref={observerRef} />
+  //       <Image
+  //         mx="auto"
+  //         mt="12px"
+  //         src="/images/decorations/3d-syrup-bunnies.png"
+  //         alt="TradingPlanet illustration"
+  //         width={192}
+  //         height={184.5}
+  //       />
+  //     </Page>
+  //   </>
+  // )
 }
 
 export default Pools

@@ -51,11 +51,12 @@ const Footer = () => {
           ml={[0, 0, '40px']}
           mt={['20px', '20px', 0]}
           mb={['8px', '8px', 0]}
+          color="white"
         >
           {t('Convert ERC-20 to BEP-20')}
         </LinkExternal>
       </Flex>
-      <Flex
+      {/* <Flex
         flexGrow={1}
         alignItems="center"
         width={['100%', '100%', '100%', 'auto']}
@@ -76,7 +77,7 @@ const Footer = () => {
           </Svg>
         </BubbleWrapper>
         <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
-      </Flex>
+      </Flex> */}
     </Wrapper>
   )
 }

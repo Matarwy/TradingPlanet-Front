@@ -114,7 +114,12 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
               ml="4px"
             />
           </Flex>
-          <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" />
+          <Toggle
+            id="toggle-disable-flippy-button"
+            checked={audioPlay}
+            scale="md"
+            onChange={toggleSetAudioMode}
+          />
         </Flex>
       </ScrollableContainer>
     </Modal>

@@ -72,10 +72,10 @@ const LotteryCardData: IconCardData = {
 const bottomLeftImage = {
   path: '/images/home/prediction-cards/',
   attributes: [
-    { src: 'bottom-left', alt: 'PLANET card' },
-    { src: 'green', alt: 'Green PLANET card with up arrow' },
-    { src: 'red', alt: 'Red PLANET card with down arrow' },
-    { src: 'top-right', alt: 'PLANET card' },
+    { src: 'bottom-left', alt: 'TP card' },
+    { src: 'green', alt: 'Green TP card with up arrow' },
+    { src: 'red', alt: 'Red TP card with down arrow' },
+    { src: 'top-right', alt: 'TP card' },
   ],
 }
 

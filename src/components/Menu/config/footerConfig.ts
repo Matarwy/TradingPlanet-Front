@@ -18,7 +18,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: '#',
       },
       {
-        label: t('PLANET token'),
+        label: t('TP token'),
         href: '#',
       },
       // {

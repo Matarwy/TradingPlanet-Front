@@ -43,19 +43,19 @@ export const earnSectionData: SalesSectionProps = {
     attributes: [
       { src: 'pie', alt: 'Pie chart' },
       { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'folder', alt: 'Folder with PLANET token' },
+      { src: 'folder', alt: 'Folder with TP token' },
     ],
   },
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'PLANET makes our world go round.',
+  headingText: 'TP makes our world go round.',
   bodyText:
-    'PLANET token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'TP token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314',
-    text: 'Buy PLANET',
+    to: '/swap?outputCurrency=0x83477a06f73fff92e8cf2c6b2da8efc03294e40c',
+    text: 'Buy TP',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d TradingPlanet' },
       { src: 'top-right', alt: 'Small 3d TradingPlanet' },
-      { src: 'coin', alt: 'PLANET token' },
+      { src: 'coin', alt: 'TP token' },
       { src: 'top-left', alt: 'Small 3d TradingPlanet' },
     ],
   },

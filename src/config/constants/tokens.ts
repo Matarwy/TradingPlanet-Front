@@ -25,10 +25,10 @@ export const mainnetTokens = {
   bnb: new Token(MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
   cake: new Token(
     MAINNET,
-    '0x96e738bc52fBcc305E8c4401d05C532Dd4D2F314',
+    '0x83477a06f73fff92e8cf2c6b2da8efc03294e40c',
     18,
-    'PLANET',
-    'TradingPlanet Token',
+    'TP',
+    'Trading Planet Token',
     'https://tradingplanet.io/',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),

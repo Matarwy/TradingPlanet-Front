@@ -370,6 +370,13 @@ const Farms: React.FC = () => {
 
   return (
       <Page>
+        <div>
+            <img src="/coming-soon.svg" alt="coming soon" style={{
+              width: 600,
+              marginBottom: 40,
+              marginTop: 20,
+            }}/>
+          </div>
       <Heading as="h2" scale="xxl" color="secondary" mb="24px">
         {t('"Coming Soon...')}
       </Heading>

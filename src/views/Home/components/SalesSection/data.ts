@@ -41,9 +41,9 @@ export const earnSectionData: SalesSectionProps = {
   images: {
     path: '/images/home/trade/',
     attributes: [
-      //{ src: 'BNB', alt: 'BNB token' },
-      // { src: 'BTC', alt: 'BTC token' },
-       { src: 'TP', alt: 'TP token' },
+      { src: 'BNB', alt: 'BNB token' },
+       { src: 'BTC', alt: 'BTC token' },
+       { src: 'CAKE', alt: 'CAKE token' },
     ],
   },
 }

@@ -33,8 +33,13 @@
     "@ethersproject/experimental": "^5.0.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@trading-planet/eslint-config-planet": "^1.2.0",
+<<<<<<< Updated upstream
     "@trading-planet/sdk": "2.4.4",
     "@trading-planet/uikit": "0.55.7",
+=======
+    "@trading-planet/sdk": "^2.4.1",
+    "@trading-planet/uikit": "0.55.2",
+>>>>>>> Stashed changes
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
     "@types/qs": "^6.9.6",

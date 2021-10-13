@@ -1211,7 +1211,7 @@
   "Will you join them?": "আপনি কি তাদের সাথে যোগ দেবেন?",
   "$%tvl% staked": "$%tvl% স্টেক করা হয়েছে",
   "The moon is made of TradingPlanets.": "চাঁদ TradingPlanet দিয়ে তৈরি।",
-  "Trade ,earn and stack crypto on  Trading Planet decentralized platform": "ছায়াপথের সবচেয়ে জনপ্রিয় বিকেন্দ্রীভূত প্ল্যাটফর্মে ক্রিপ্টো ট্রেড করুন, উপার্জন করুন এবং জিতুন।",
+  "Trade ,earn and stack crypto on  Trading Planet decentralized platform.": "ছায়াপথের সবচেয়ে জনপ্রিয় বিকেন্দ্রীভূত প্ল্যাটফর্মে ক্রিপ্টো ট্রেড করুন, উপার্জন করুন এবং জিতুন।",
   "Lunar bunny": "চাঁদের খরগোস",
   "Total supply": "মোট সরবরাহ",
   "Burned to date": "এখন পর্যন্ত খরচ করা হয়েছে",
@@ -1592,5 +1592,12 @@
   "Your NFT has been transferred to another wallet": "Your NFT has been transferred to another wallet",
   "Back": "Back",
   "Confirm transaction": "Confirm transaction",
-  "Collection": "Collection"
+  "Collection": "Collection",
+  "our target is to be used by millions": "আমাদের লক্ষ্য লক্ষ লক্ষ ব্যবহার করা",
+  "don't forget our limit is the sky.": "ভুলে যাবেন না আমাদের সীমা হল আকাশ।",
+  "Trade anything without registration it's completely decentralised platform": "রেজিস্ট্রেশন ছাড়া যেকোনো কিছু ট্রেড করুন এটি সম্পূর্ণ বিকেন্দ্রীভূত প্ল্যাটফর্ম",
+  "Instantly swap crypto tokens, no registration.": "তাত্ক্ষণিকভাবে ক্রিপ্টো টোকেন অদলবদল, কোন নিবন্ধন নেই।",
+  "Not Just a Trader Here, You're More Like an Owner": "এখানে শুধু একজন ব্যবসায়ী নন, আপনি একজন মালিকের মতো",
+  "With TP, our governance token, you can help decide the future of the exchange. As we grow, you grow!": "টিপি, আমাদের গভর্নেন্স টোকেনের সাহায্যে আপনি বিনিময়ের ভবিষ্যৎ নির্ধারণে সাহায্য করতে পারেন। আমরা যেমন বড় হচ্ছি, আপনিও বড় হচ্ছেন!",
+  "TP makes our planet different.": "টিপি আমাদের গ্রহকে ভিন্ন করে তোলে।"
 }

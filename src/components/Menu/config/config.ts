@@ -7,7 +7,7 @@ export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Trade'),
-    icon: 'Swap',
+    icon: 'Exchange',
     href: '/swap',
     showItemsOnMobile: false,
     items: [
@@ -24,7 +24,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Earn'),
     href: '/farms',
-    icon: 'Earn',
+    icon: 'Money',
     items: [
       {
         label: t('Farms'),
@@ -39,7 +39,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Win'),
     href: '/prediction',
-    icon: 'Trophy',
+    icon: 'Award',
     items: [
       {
         label: t('Prediction (BETA)'),
@@ -54,7 +54,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('NFT'),
     href: `${nftsBaseUrl}`,
-    icon: 'Nft',
+    icon: 'Auction',
     items: [
       {
         label: t('Overview'),

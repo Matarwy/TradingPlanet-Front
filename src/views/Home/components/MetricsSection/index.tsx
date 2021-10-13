@@ -21,7 +21,7 @@ const Stats = () => {
   const trades = formatLocalisedCompactNumber(txCount)
   const users = formatLocalisedCompactNumber(addressCount)
 
-  const tvlText = t('The protocol facilitates automated transactions between cryptocurrency tokens on the Binance blockchain through the use of smart contracts', { tvl: tvlString })
+  const tvlText = t('On Trading Planet Swap, you can make trades on the Binance Smart Chain. It\'s on of the largest decentralized network in the world of blockchain, it\'s impossible to run an exchange without using it.Binance Smart Chain came  recently and helped solve the problems of Etherium Blockchain. With faster trades and lower fees, Binance is definitely one to watch out for.', { tvl: tvlString })
   const [entrusting, inFunds] = tvlText.split(tvlString)
 
   const UsersCardData: IconCardData = {
@@ -40,14 +40,14 @@ const Stats = () => {
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <LogoIcon height="48px" width="48px" mb="24px" />
       <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+        {t('our target is to be used by millions')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('don\'t forget our limit is the sky.')}
       </Heading>
-      <Text textAlign="center" color="textSubtle">
+      {/* <Text textAlign="center" color="textSubtle">
         {t('Trading Planet is  a decentralized finance protocol that is used to exchange cryptocurrencies.')}
-      </Text>
+      </Text> */}
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
           {entrusting}

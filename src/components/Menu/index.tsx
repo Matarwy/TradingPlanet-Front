@@ -23,9 +23,9 @@ const Menu = (props) => {
   const activeSubMenuItem = getActiveSubMenuItem({ menuItem: activeMenuItem, pathname });
 
 
+  console.log(activeSubMenuItem)
   React.useEffect(() => {
-    console.log(cakePriceUsdDisplay)
-  }, [cakePriceUsdDisplay])
+  }, [activeSubMenuItem])
 
 
 

@@ -55,10 +55,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Documentation'),
         href: '#',
       },
-      {
-        label: t('Bug Bounty'),
-        href: '#',
-      },
+      // {
+      //   label: t('Bug Bounty'),
+      //   href: '#',
+      // },
       {
         label: t('Audits'),
         href: '#',

@@ -303,7 +303,6 @@ export default function Swap({ history }: RouteComponentProps) {
   return (
     <Page>
       <AppBody>
-       
         <Wrapper id="swap-page">
           <AutoColumn gap="md">
             <CurrencyInputPanel

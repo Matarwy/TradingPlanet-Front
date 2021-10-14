@@ -303,7 +303,7 @@ export default function Swap({ history }: RouteComponentProps) {
   return (
     <Page>
       <AppBody>
-        <AppHeader title={t('Exchange')} subtitle={t('Trade tokens in an instant')} />
+       
         <Wrapper id="swap-page">
           <AutoColumn gap="md">
             <CurrencyInputPanel
@@ -384,6 +384,7 @@ export default function Swap({ history }: RouteComponentProps) {
               </AutoColumn>
             )}
           </AutoColumn>
+          <AppHeader title={t('Exchange')} subtitle={t('Trade tokens in an instant')} />
           <Box mt="1rem">
             {swapIsUnsupported ? (
               <Button width="100%" disabled mb="4px">
@@ -487,7 +488,7 @@ export default function Swap({ history }: RouteComponentProps) {
               </Column>
             )}
             {isExpertMode && swapErrorMessage ? <SwapCallbackError error={swapErrorMessage} /> : null}
-          </Box>
+          </Box> 
         </Wrapper>
       </AppBody>
       {!swapIsUnsupported ? (

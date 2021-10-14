@@ -142,7 +142,6 @@ export function init() {
         let dz = 0 + (radius * Math.cos(phi));
         return new THREE.Vector3(dx, dy, dz);
     }
-    console.log(stars)
 }
 
 

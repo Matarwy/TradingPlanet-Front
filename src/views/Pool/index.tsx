@@ -85,7 +85,6 @@ export default function Pool() {
   return (
     <Page>
       <AppBody>
-        <AppHeader title={t('Your Liquidity')} subtitle={t('Remove liquidity to receive tokens back')} />
         <Body>
           {renderBody()}
           {account && !v2IsLoading && (
@@ -99,6 +98,7 @@ export default function Pool() {
             </Flex>
           )}
         </Body>
+        <AppHeader title={t('Your Liquidity')} subtitle={t('Remove liquidity to receive tokens back')} />
         <CardFooter style={{ textAlign: 'center' }}>
           <Button id="join-pool-button" as={Link} to="/add" width="100%" startIcon={<AddIcon color="white" />}>
             {t('Add Liquidity')}

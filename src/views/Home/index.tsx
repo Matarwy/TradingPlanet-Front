@@ -68,11 +68,7 @@ const Home: React.FC = () => {
       </StyledHeroSection>
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
-        background={
-          theme.isDark
-            ? 'linear-gradient(180deg, #09070C 22%, #201335 100%)'
-            : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
-        }
+        background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
       >
@@ -84,11 +80,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <OuterWedgeWrapper>
+        {/* <OuterWedgeWrapper>
           <InnerWedgeWrapper top fill={theme.isDark ? '#201335' : '#D8CBED'}>
             <WedgeTopLeft />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
+        </OuterWedgeWrapper> */}
         <SalesSection {...swapSectionData} />
       </PageSection>
       <PageSection
@@ -97,11 +93,11 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <OuterWedgeWrapper>
+        {/* <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
+        </OuterWedgeWrapper> */}
         <SalesSection {...earnSectionData} />
         {/* <FarmsPoolsRow /> */}
       </PageSection>

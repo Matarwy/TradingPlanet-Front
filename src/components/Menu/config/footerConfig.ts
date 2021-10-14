@@ -14,11 +14,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://tradingplanet.org',
       },
       {
-        label: t('Community'),
+        label: t('white paper'),
         href: '#',
       },
-      {
-        label: t('TP token'),
+       {
+        label: t('FAQ'),
         href: '#',
       },
       // {
@@ -31,23 +31,23 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       // },
     ],
   },
-  {
-    label: t('Help'),
-    items: [
-      {
-        label: t('Customer Support'),
-        href: '#',
-      },
-      {
-        label: t('Troubleshooting'),
-        href: '#',
-      },
-      {
-        label: t('Guides'),
-        href: '#',
-      },
-    ],
-  },
+  // {
+  //   label: t('Help'),
+  //   items: [
+  //     {
+  //       label: t('Customer Support'),
+  //       href: '#',
+  //     },
+  //     {
+  //       label: t('Troubleshooting'),
+  //       href: '#',
+  //     },
+  //     {
+  //       label: t('Guides'),
+  //       href: '#',
+  //     },
+  //   ],
+  // },
   {
     label: t('Developers'),
     items: [

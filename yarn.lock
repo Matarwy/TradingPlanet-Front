@@ -3324,10 +3324,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@trading-planet/uikit@0.55.8":
-  version "0.55.8"
-  resolved "https://registry.yarnpkg.com/@trading-planet/uikit/-/uikit-0.55.8.tgz#1bb2bf423a5673bb7396d6a8b5dd9d03c0c9cf74"
-  integrity sha512-DuLQf/xA1hGZ/v2cEkUtfVsw9czSWq3soSUrezceiq5TaKUOd4OaYwSJhMsHYDKsC/fhXaH15qNmR2X3Qoz3QQ==
+"@trading-planet/uikit@0.55.10":
+  version "0.55.10"
+  resolved "https://registry.yarnpkg.com/@trading-planet/uikit/-/uikit-0.55.10.tgz#81d5fd66028c3fbf79ab58459a2b7d70642dd7f5"
+  integrity sha512-Fp+gq9YrTBQR7refj7LlMsAo20W7wxplywcDBxmtlwUvrdETAQvAigfxX4BTchyOIMD7SrulHZnQrhX10qQunw==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

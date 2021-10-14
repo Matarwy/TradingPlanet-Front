@@ -1,7 +1,7 @@
 import { SalesSectionProps } from '.'
 
 export const swapSectionData: SalesSectionProps = {
-  headingText: 'Trade anything. No registration, no hassle.',
+  headingText: 'Trade anything without registration it\'s completely decentralised platform',
   bodyText: 'Instantly swap crypto tokens, no registration.',
   reverse: false,
   primaryButton: {
@@ -25,8 +25,8 @@ export const swapSectionData: SalesSectionProps = {
 }
 
 export const earnSectionData: SalesSectionProps = {
-  headingText: 'Earn passive income with crypto.',
-  bodyText: 'Provide liquidity and earn from transaction fees. Join our staking or yield farming pools.',
+  headingText: 'Not Just a Trader Here, You\'re More Like an Owner',
+  bodyText: 'With TP, our governance token, you can help decide the future of the exchange. As we grow, you grow!',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -49,7 +49,7 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'TP makes our world go round.',
+  headingText: 'TP makes our planet different.',
   bodyText:
     'TP token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,

@@ -5,7 +5,7 @@ export const swapSectionData: SalesSectionProps = {
   bodyText: 'Instantly swap crypto tokens, no registration.',
   reverse: false,
   primaryButton: {
-    to: '/swap',
+    to: '/swap?outputCurrency=0x83477a06f73fff92e8cf2c6b2da8efc03294e40c',
     text: 'Trade Now',
     external: false,
   },

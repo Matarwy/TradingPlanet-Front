@@ -21,7 +21,7 @@ const Stats = () => {
   const trades = formatLocalisedCompactNumber(txCount)
   const users = formatLocalisedCompactNumber(addressCount)
 
-  const tvlText = t('On Trading Planet Swap, you can make trades on the Binance Smart Chain. It\'s on of the largest decentralized network in the world of blockchain, it\'s impossible to run an exchange without using it.Binance Smart Chain came  recently and helped solve the problems of Etherium Blockchain. With faster trades and lower fees, Binance is definitely one to watch out for.')
+  const tvlText = t("On Trading Planet Swap, you can make trades on the Binance Smart Chain. It's on of the largest decentralized network in the world of blockchain, it's impossible to run an exchange without using it.Binance Smart Chain came  recently and helped solve the problems of Etherium Blockchain. With faster trades and lower fees, Binance is definitely one to watch out for.")
   const [entrusting, inFunds] = tvlText.split(tvlString)
 
   const UsersCardData: IconCardData = {

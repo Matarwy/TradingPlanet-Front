@@ -76,7 +76,7 @@ const Home: React.FC = () => {
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.background}
+        // background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
       >
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.gradients.cardHeader}
+        background={theme.isDark? 'linear-gradient(111.68deg,#615f3e70 0%,#000000 100%)':'linear-gradient(111.68deg,#f7f39570 0%,#faf9fa 100%)'}
         index={2}
         hasCurvedDivider={false}
       >

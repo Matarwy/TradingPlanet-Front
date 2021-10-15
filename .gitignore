@@ -11,6 +11,10 @@ cypress/videos
 cypress/screenshots
 cypress/fixtures/example.json
 
+
+package-lock.json
+yarn.lock
+
 # next.js
 /.next/
 /out/

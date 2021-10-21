@@ -53,10 +53,10 @@
     {
       "name": "Trading Planet Token",
       "symbol": "TP",
-      "address": "0x83477a06f73fff92e8cf2c6b2da8efc03294e40c",
+      "address": "0x363387914c38de4e01acb79221635fe87288ddb9",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "/images/tokens/0x83477a06f73fff92e8cf2c6b2da8efc03294e40c.png"
+      "logoURI": "/images/tokens/0x363387914c38de4e01acb79221635fe87288ddb9.png"
     },
     {
       "name": "Venus",

@@ -5,7 +5,7 @@ export const swapSectionData: SalesSectionProps = {
   bodyText: 'Instantly swap crypto tokens, no registration.',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x83477a06f73fff92e8cf2c6b2da8efc03294e40c',
+    to: '/swap?outputCurrency=0x363387914c38de4e01acb79221635fe87288ddb9',
     text: 'Trade Now',
     external: false,
   },
@@ -54,7 +54,7 @@ export const cakeSectionData: SalesSectionProps = {
     'TP token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x83477a06f73fff92e8cf2c6b2da8efc03294e40c',
+    to: '/swap?outputCurrency=0x363387914c38de4e01acb79221635fe87288ddb9',
     text: 'Buy TP',
     external: false,
   },

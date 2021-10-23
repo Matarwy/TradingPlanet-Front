@@ -48,25 +48,25 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   //     },
   //   ],
   // },
-  {
-    label: t('Developers'),
-    items: [
-      // {
-      //   label: t('Documentation'),
-      //   href: 'https://medium.com/@TradingPlanetEX',
-      // },
-      // {
-      //   label: t('Bug Bounty'),
-      //   href: '#',
-      // },
-      // {
-      //   label: t('Audits'),
-      //   href: 'https://medium.com/@TradingPlanetEX',
-      // },
-      // {
-      //   label: t('Careers'),
-      //   href: '#',
-      // },
-    ],
-  },
+  // {
+  //   label: t('Developers'),
+  //   items: [
+  //     // {
+  //     //   label: t('Documentation'),
+  //     //   href: 'https://medium.com/@TradingPlanetEX',
+  //     // },
+  //     // {
+  //     //   label: t('Bug Bounty'),
+  //     //   href: '#',
+  //     // },
+  //     // {
+  //     //   label: t('Audits'),
+  //     //   href: 'https://medium.com/@TradingPlanetEX',
+  //     // },
+  //     // {
+  //     //   label: t('Careers'),
+  //     //   href: '#',
+  //     // },
+  //   ],
+  // },
 ]

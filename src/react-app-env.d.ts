@@ -10,4 +10,4 @@ interface Window {
   }
 }
 
-type SerializedBigNumber = string
+type SerializedBigNumber = string;

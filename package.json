@@ -1,7 +1,7 @@
 {
   "name": "tradingplanet-frontend",
   "version": "0.1.0",
-  "private": true,
+  "main": "src/index.tsx",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
@@ -34,7 +34,7 @@
     "@reduxjs/toolkit": "^1.5.0",
     "@trading-planet/eslint-config-planet": "^1.2.0",
     "@trading-planet/sdk": "2.4.4",
-    "@trading-planet/uikit": "0.55.12",
+    "@trading-planet/uikit": "0.55.13",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
     "@types/qs": "^6.9.6",
@@ -75,7 +75,6 @@
     "react-markdown": "^6.0.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
     "react-transition-group": "^4.4.1",
     "react-window": "^1.8.6",
     "recharts": "^2.1.0",
@@ -86,7 +85,7 @@
     "styled-components": "^5.3.0",
     "swiper": "^6.8.4",
     "three": "^0.133.1",
-    "typescript": "^4.3.2"
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -102,7 +101,8 @@
     "eslint-plugin-cypress": "^2.11.3",
     "husky": "^7.0.0",
     "prettier": "^2.3.0",
-    "serve": "^12.0.0",
+    "react-scripts": "^4.0.3",
+    "serve": "^8.2.0",
     "source-map-explorer": "^2.5.2",
     "start-server-and-test": "^1.14.0",
     "ts-node": "^9.1.1"

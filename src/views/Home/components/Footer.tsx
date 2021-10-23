@@ -112,7 +112,7 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://tradingplanet.org/">
+        <Link external href="https://medium.com/@TradingPlanetEX/">
           {t('Learn how to start')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}

@@ -6,6 +6,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test --testPathIgnorePatterns=/src/__tests__/config/",
     "test:config": "react-scripts test --testPathPattern=/src/__tests__/config/",
     "integration-test": "start-server-and-test 'serve -s build -p 3000' http://localhost:3000 'cypress run'",
@@ -34,7 +35,10 @@
     "@reduxjs/toolkit": "^1.5.0",
     "@trading-planet/eslint-config-planet": "^1.2.0",
     "@trading-planet/sdk": "2.4.4",
+<<<<<<< HEAD
     "@trading-planet/uikit": "0.55.13",
+=======
+>>>>>>> bfe8cd98ada8c6ed523ef791032034ed255aaeb1
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
     "@types/qs": "^6.9.6",

@@ -28,7 +28,7 @@ export const mainnetTokens = {
     '0x363387914c38de4e01acb79221635fe87288ddb9',
     18,
     'TP',
-    'Trading Planet Token',
+    'TradingPlanet Token',
     'https://tradingplanet.io/',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),

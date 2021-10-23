@@ -67,7 +67,7 @@ const Footer = () => {
             id="clickExchangeHelp"
             as="a"
             external
-            href="https://tradingplanet.org"
+            href="https://medium.com/@TradingPlanetEX"
             variant="subtle"
           >
             {t('Need help ?')}

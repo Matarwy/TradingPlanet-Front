@@ -10,7 +10,7 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://tradingplanet.org/',
+    to: 'https://medium.com/@TradingPlanetEX/',
     text: 'Learn',
     external: true,
   },
@@ -34,7 +34,7 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://tradingplanet.org',
+    to: 'https://medium.com/@TradingPlanetEX',
     text: 'Learn',
     external: true,
   },
@@ -59,7 +59,7 @@ export const cakeSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://tradingplanet.org',
+    to: 'https://medium.com/@TradingPlanetEX',
     text: 'Learn',
     external: true,
   },

@@ -13,10 +13,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Blog'),
         href: 'https://medium.com/@TradingPlanetEX',
       },
-      // {
-      //   label: t('WhitePaper'),
-      //   href: 'https://medium.com/@TradingPlanetEX',
-      // },
+      {
+        label: t('WhitePaper'),
+        href: 'https://tradingplanet.finance/TradingPlanetWhitePaper.pdf',
+      },
       //  {
       //   label: t('FAQ'),
       //   href: '#',

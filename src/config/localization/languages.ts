@@ -30,7 +30,7 @@ export const ZHCN: Language = { locale: 'zh-CN', language: '简体中文', code:
 export const ZHTW: Language = { locale: 'zh-TW', language: '繁體中文', code: 'zh-tw' }
 
 export const languages = {
-  'ar-SA': AR,
+  // 'ar-SA': AR,
   // 'bn-BD': BN,
   'en-US': EN,
   // 'de-DE': DE,

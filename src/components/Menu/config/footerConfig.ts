@@ -7,7 +7,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://t.me/TradingPlanetExchange',
+        href: 'https://t.me/Tradingplanet_Group',
       },
       {
         label: t('Blog'),

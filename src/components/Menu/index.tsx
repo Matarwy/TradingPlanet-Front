@@ -35,7 +35,7 @@ const Menu = (props) => {
       globalMenu={<GlobalSettings />}
       isDark={isDark}
       toggleTheme={toggleTheme}
-      currentLang={currentLanguage.code}
+      currentLang={currentLanguage?.code}
       langs={languageList}
       setLang={setLanguage}
       cakePriceUsd={cakePriceUsdDisplay}

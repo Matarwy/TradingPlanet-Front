@@ -17,6 +17,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('WhitePaper'),
         href: 'https://tradingplanet.finance/TradingPlanetWhitePaper.pdf',
       },
+      {
+        label: t('Audit'),
+        href: 'https://tradingplanet.finance/TradingPlanetAudit.pdf',
+      },
       //  {
       //   label: t('FAQ'),
       //   href: '#',

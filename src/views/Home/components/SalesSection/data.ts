@@ -54,8 +54,8 @@ export const cakeSectionData: SalesSectionProps = {
     'TP token is at the heart of the TradingPlanet ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x363387914c38de4e01acb79221635fe87288ddb9',
-    text: 'Buy TP',
+    to: '/farms',
+    text: 'Harvest TP',
     external: false,
   },
   secondaryButton: {

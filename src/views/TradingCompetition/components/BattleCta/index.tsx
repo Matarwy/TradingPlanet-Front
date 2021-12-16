@@ -113,7 +113,7 @@ const BattleCta: React.FC<CompetitionProps> = ({
     }
     // User registered and competition live
     if (isCompetitionLive) {
-      return t('Trade Now')
+      return t('Buy TP')
     }
 
     // User registered and competition finished

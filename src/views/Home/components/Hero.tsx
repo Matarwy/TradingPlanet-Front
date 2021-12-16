@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Link } from 'react-router-dom'
-import { Flex, Heading, Button } from '@trading-planet/uikit'
+// import { Link } from 'react-router-dom'
+import { Flex, Heading, Button,Link  } from '@trading-planet/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -138,8 +138,8 @@ const Hero = () => {
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
-            <Link to="/swap?outputCurrency=0x363387914c38de4e01acb79221635fe87288ddb9">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+            <Link external href="https://www.pinksale.finance/#/launchpad/0x9afC5787e371d56d8502F962f68c4a272a214e9D?chain=BSC">
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Buy TP')}</Button>
             </Link>
           </Flex>
         </Flex>

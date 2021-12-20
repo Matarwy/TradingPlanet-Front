@@ -77,7 +77,7 @@ export const getProfileAvatar = async (address: string) => {
       }
     }
 
-    return { nft, hasRegistered }
+    return null // the base return from pancake code { nft, hasRegistered }
   } catch {
     return { nft: null, hasRegistered: false }
   }
@@ -140,7 +140,7 @@ export const getProfile = async (address: string): Promise<GetProfileResponse> =
       team,
     } as Profile
 
-    return { hasRegistered, profile }
+    return { hasRegistered, profile: null } // the base return from pancake code { hasRegistered, profile }
   } catch (e) {
     console.error(e)
     return null

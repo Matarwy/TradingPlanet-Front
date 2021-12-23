@@ -1,6 +1,8 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { PoolUpdater, ProtocolUpdater, TokenUpdater } from 'state/info/updaters'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
 import InfoNav from './components/InfoNav'
 import Overview from './Overview'
 import Pools from './Pools'
@@ -9,8 +11,7 @@ import Tokens from './Tokens'
 import RedirectInvalidToken from './Tokens/redirects'
 
 import Page from '../Page'
-import { Heading } from '@trading-planet/uikit'
-import { useTranslation } from 'contexts/Localization'
+
 
 
 const Info: React.FC = () => {

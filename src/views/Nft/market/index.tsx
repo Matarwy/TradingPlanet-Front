@@ -4,11 +4,12 @@ import { useWeb3React } from '@web3-react/core'
 import { useFetchCollections, useGetNFTInitializationState } from 'state/nftMarket/hooks'
 import PageLoader from 'components/Loader/PageLoader'
 import { NFTMarketInitializationState } from 'state/nftMarket/types'
+import { Heading } from '@trading-planet/uikit'
+import { useTranslation } from 'contexts/Localization'
 import { nftsBaseUrl, pancakeBunniesAddress } from './constants'
 
 import Page from '../../Page'
-import { Heading } from '@trading-planet/uikit'
-import { useTranslation } from 'contexts/Localization'
+
 
 
 const Home = lazy(() => import('./Home'))
